@@ -7,7 +7,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <netinet/in.h>
-#define SERVER_ADDRESS_CLIENT "192.168.1.55"
+#define SERVER_ADDRESS_CLIENT "192.168.1.55" //server'ın paylaştığı bilgilere ulaşabilmek için onun çalıştığı bilgisayarın static ip'si gereklidir 
 
 int main() {
     int network_socket;
