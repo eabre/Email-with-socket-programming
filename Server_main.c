@@ -26,9 +26,9 @@ int main()
     char command_2[1024];
     char mail_basics[1024]="curl --ssl-reqd \
                         --url 'smtps://smtp.gmail.com:465' \
-                        --user 'barann.tanrverdi@gmail.com:Ozlem1972' \
-                        --mail-from 'barann.tanrverdi@gmail.com' \
-                        --mail-rcpt 'barann.tanrverdi@gmail.com' \
+                        --user 'example@gmail.com:Password' \
+                        --mail-from 'example@gmail.com' \
+                        --mail-rcpt 'example@gmail.com' \
                         --upload-file dosya.txt";
     char command_from_client[256];
     int server_socket;
@@ -125,8 +125,8 @@ int main()
                                                 }
                                                 else
                                                 {
-                                                                strcat(command_2,"From: \"Mail Bot\" <barann.tanrverdi@gmail.com>\n");
-                                                                strcat(command_2,"To: \"Myself\" <barann.tanrverdi@gmail.com>\n");
+                                                                strcat(command_2,"From: \"Mail Bot\" <example@gmail.com>\n");
+                                                                strcat(command_2,"To: \"Myself\" <example@gmail.com>\n");
                                                                 strcat(command_2,"Subject: This is a test\n");
                                                                 printf("\n command 2 is %s \n",command_2);
                                                                 dosya = fopen("dosya.txt","w");
